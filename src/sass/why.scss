@@ -2,4 +2,13 @@
   text-align: center;
   background-color: var(--gray);
   padding-top: 5em;
+  .copy {
+    margin-bottom: 4em;
+  }
+  &__item {
+    /*  border: 1px solid black; */
+    img {
+      margin-bottom: 1.5em;
+    }
+  }
 }
