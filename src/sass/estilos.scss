@@ -67,6 +67,7 @@ body {
 }
 .button {
   border: none;
+  outline: none;
   padding: 0.9em 2.2em;
   font-size: 1em;
   background-image: linear-gradient(
@@ -76,6 +77,10 @@ body {
   );
   border-radius: 1.5em;
   color: var(--white);
+}
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 @mixin icon {
