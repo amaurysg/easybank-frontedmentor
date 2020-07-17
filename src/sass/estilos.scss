@@ -2,6 +2,7 @@
 @import "./hero.scss";
 @import "./why.scss";
 @import "./latestArticles.scss";
+@import "./footer.scss";
 
 :root {
   --darkBlue: hsl(233, 26%, 24%);
@@ -11,6 +12,7 @@
   --gray: hsl(220, 16%, 96%);
   --lightGray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
+  --black: color black;
 
   font-size: 16px;
   --wrapperSpace: 1.5em;
@@ -74,4 +76,35 @@ body {
   );
   border-radius: 1.5em;
   color: var(--white);
+}
+
+@mixin icon {
+  width: 25px;
+  height: 25px;
+  /* display: inline-flex; */
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+}
+
+.icon {
+  &__facebook {
+    @include icon;
+    background-image: url("../images/icon-facebook.svg");
+  }
+  &__youtube {
+    @include icon;
+    background-image: url("../images/icon-youtube.svg");
+  }
+  &__twitter {
+    @include icon;
+    background-image: url("../images/icon-twitter.svg");
+  }
+  &__pinterest {
+    @include icon;
+    background-image: url("../images/icon-pinterest.svg");
+  }
+  &__instagram {
+    @include icon;
+    background-image: url("../images/icon-instagram.svg");
+  }
 }

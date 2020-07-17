@@ -1,0 +1,39 @@
+.footer {
+  color: white;
+  background-color: var(--darkBlue);
+  padding: 2em 0;
+  text-align: center;
+
+  svg {
+    margin: auto;
+    display: block;
+    margin-bottom: 2em;
+  }
+  &__social {
+    /*  display: flex;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(5, 25px);
+    grid-column-gap: 1em;
+    justify-content: center;
+    margin-bottom: 2.5em 0;
+  }
+  &__link {
+    display: block;
+    /* text-align: center; */
+    text-decoration: none;
+    color: var(--gray);
+    margin: 2em;
+  }
+  &__copyr {
+    color: var(--grayblue);
+    margin-top: 2.5em;
+  }
+  .button {
+    text-align: center;
+    /* margin: 0 auto; */
+  }
+  p {
+    text-align: center;
+  }
+}
